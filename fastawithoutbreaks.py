@@ -1,3 +1,5 @@
+#!/usr/bin/python3.9
+
 # %%  Adds provided string to path of containing folder
 
 def combpath(filename):
@@ -28,7 +30,7 @@ def combpath(filename):
 # %% Read FASTA file per line into list
 
 def fastareadline(fastafilename):
-    input_file = open(combpath(fastafilename), 'r')
+    input_file = open(fastafilename, 'r')
 
     # Extracting content into list of string
     allines = input_file.readlines()
@@ -39,7 +41,7 @@ def fastareadline(fastafilename):
     return(allines)
 
 def fastaoutputstring(string, outputfilename):
-    currentfile = open(combpath(outputfilename), 'w')
+    currentfile = open(outputfilename, 'w')
     currentfile.write(string)
     currentfile.close()
     
@@ -81,18 +83,22 @@ def fastalist_whiterev(linelist):
     return(''.join(linelist))
 
 # Let's use this thing:
-importedfile = fastareadline('tcoffee_alldp.fasta')
+importedfile = fastareadline('./tcoffee_alldp.fasta')
+print(importedfile)
+
 # Remove linebreaks and get total string
 importedfile_nobreak = fasta_removebreaks(importedfile)
+print(importedfile_nobreak)
 
 # Create csv between positions
-importedfile_nobreak_csvsplit = fasta_to_csv(importedfile_nobreak)
-fastaoutputstring(importedfile_nobreak_csvsplit, 'csvtest.txt')
+#importedfile_nobreak_csvsplit = fasta_to_csv(importedfile_nobreak)
+#fastaoutputstring(importedfile_nobreak_csvsplit, 'csvtest.txt')
 
-fastaoutputstring(importedfile_nobreak, 'testoutput.txt')
+#fastaoutputstring(importedfile_nobreak, 'testoutput.txt')
 
 # Let's see whether we can now import the output from excel
-outputfromcsv = fastareadline('manualalignment.txt')
-backinto = fastalist_whiterev(outputfromcsv)
-fastaoutputstring(backinto, 'manualalignedformview.txt')
-    
+#outputfromcsv = fastareadline('manualalignment.txt')
+#backinto = fastalist_whiterev(outputfromcsv)
+#fastaoutputstring(backinto, 'manualalignedformview.txt')
+
+print("whaaaa")
