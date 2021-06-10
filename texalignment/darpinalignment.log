@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.6.10)  10 JUN 2021 11:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.6.10)  10 JUN 2021 11:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -420,52 +420,26 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 66.
 (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-
-! Package TeXshade Error: File `/home/upgradedavid/Documents/darpin_gfp_sequenc
-es/texalignment/emboss_seqret-I20210610-100040-0468-69714997-p2m' not found.
-
-See the TeXshade package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.70 ...seqret-I20210610-100040-0468-69714997-p2m}
-                                                  
-? 
-<Ignored seq `1' in \constosingleseq > [1
-Non-PDF special ignored!
-<special> papersize=597.50787pt,845.04684pt
-Non-PDF special ignored!
-<special> color push  Black
-Non-PDF special ignored!
-<special> color pop
-
-Non-PDF special ignored!
-<special> color push  Black
-Non-PDF special ignored!
-<special> color pop
-{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
-Non-PDF special ignored!
-<special> color push  Black
-Non-PDF special ignored!
-<special> color pop
-] (./darpinalignment.aux) ) 
+(clustal.fasta:
+Runaway argument?
+! Paragraph ended before \inf@@get was complete.
+<to be read again> 
+                   \par 
+l.70 \begin{texshade}{clustal.fasta}
+                                    
+? x
+ 
 Here is how much of TeX's memory you used:
- 9762 strings out of 478536
- 131680 string characters out of 5850225
- 537279 words of memory out of 5000000
- 27634 multiletter control sequences out of 15000+600000
- 410788 words of font info for 54 fonts, out of 8000000 for 9000
+ 9849 strings out of 478536
+ 132545 string characters out of 5850225
+ 535279 words of memory out of 5000000
+ 27725 multiletter control sequences out of 15000+600000
+ 409880 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 69i,6n,79p,234b,597s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2021/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmr10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmr12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmr17.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmss12.pfb>
-Output written on darpinalignment.pdf (1 page, 42989 bytes).
+ 69i,6n,79p,234b,1046s stack positions out of 5000i,500n,10000p,200000b,80000s
+No pages of output.
 PDF statistics:
- 28 PDF objects out of 1000 (max. 8388607)
- 16 compressed objects within 1 object stream
+ 0 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
