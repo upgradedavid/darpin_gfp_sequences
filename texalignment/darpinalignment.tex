@@ -29,10 +29,11 @@
 \usepackage{paralist} % very flexible & customisable lists (eg. enumerate/itemize, etc.)
 \usepackage{verbatim} % adds environment for commenting out blocks of text & for better verbatim
 \usepackage{subfig} % make it possible to include more than one captioned figure/table in a single float
-
-\usepackage{texshade}
-
 % These packages are all incorporated in the memoir class to one degree or another...
+
+
+\usepackage{xcolor}
+\usepackage{texshade}
 
 %%% HEADERS & FOOTERS
 \usepackage{fancyhdr} % This should be set AFTER setting up the page geometry
@@ -65,16 +66,32 @@
 \begin{document}
 \maketitle
 
+
 \section{First section}
 
 \begin{texshade}{clustal.fasta}
-%\shadingmode{diverse}
+\shadingmode{diverse}
 \end{texshade}
 
 Your text goes here.
 
 \subsection{A subsection}
 
+\begin{texshade}{clustal.fasta}
+\shadingmode{diverse}
+\setends{1}{77..109}
+\featureslarge
+\feature{top}{1}{77..109}{}{AQP2 species variants}
+\namesrm\namessl
+\hidenumbering\showruler{top}{1}
+\shownames{left}
+\nameseq{1}{Bos taurus}
+\nameseq{2}{Canis familiaris}
+\nameseq{3}{Dugong dugong}
+\nameseq{4}{Equus caballus}
+\nameseq{5}{Elephas maximus}
+\frameblock{1}{82..82,106..106}{Red[1pt]}
+\end{texshade}\label{frame}
 More text.
 
 \end{document}
